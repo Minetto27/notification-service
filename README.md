@@ -26,6 +26,9 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Summary
+Application for handling notifications
+
 ## Installation
 
 ```bash
