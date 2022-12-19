@@ -9,4 +9,6 @@ import { NotificationsController } from './controllers/notifications.controller'
     providers: [SendNotification],
 })
 
-export class HttpModule {}
+export class HttpModule {
+    
+}
