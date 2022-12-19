@@ -3,6 +3,7 @@ import { randomUUID } from 'crypto';
 import { CreateNotificationBody } from '../dtos/create-notification-body';
 import { PrismaService } from '../../database/prisma/prisma.service';
 import { SendNotification } from '@application/use-cases/send-notification';
+import { NotificationViewModel } from '../view-models/notification-view-model';
 
 
 @Controller('notifications')
@@ -22,6 +23,6 @@ export class NotificationsController {
       category
     });
 
-    return { notification };
+    return { notification: NotificationViewModel.toHTTP(notification) };
   }
 }
